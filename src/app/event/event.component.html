@@ -1,0 +1,15 @@
+<h1>Events</h1>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Name</th>
+    <th scope="col">Date</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of events">
+    <td>{{ item.name }}</td>
+    <td>{{ item.date }}</td>
+  </tr>
+  </tbody>
+</table>
