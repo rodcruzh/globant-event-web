@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { EventModel } from './../model/event.model';
+import { EventService } from './event.service';
+
 @Component({
   selector: 'app-event',
   templateUrl: './event.component.html',
@@ -18,7 +21,7 @@ export class EventComponent implements OnInit {
 
   private getEvents(): void {
     this.eventService.getEvents().subscribe(res => {
-      this.categories = res;
+      this.events = res;
     });
   }
 
