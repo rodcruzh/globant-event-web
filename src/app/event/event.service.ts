@@ -15,4 +15,8 @@ export class EventService {
     return this.httpClient.get<EventModel[]>("http://localhost:8080/events");
   }
 
+  public addEvent(event: EventModel): void {
+    this.httpClient.post("http://localhost:8080/events", JSON.stringify(event));
+  }
+
 }
