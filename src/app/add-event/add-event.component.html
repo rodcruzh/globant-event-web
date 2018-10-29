@@ -13,9 +13,9 @@
   <input placeholder="Event Name" id="event-name" name="eventName" [(ngModel)]="event.name">
   <input placeholder="Date" id="add-event-date" name="eventDate" [(ngModel)]="event.date">
   <p>Venue Information</p>
-  <input placeholder="Venue Name" name="venueName" [(ngModel)]="event.venueName">
-  <input placeholder="Venue City" name="venueCity" [(ngModel)]="event.venueCity">
-  <select size="1" name="venueState" [(ngModel)]="event.venueState">
+  <input placeholder="Venue Name" name="venueName" (ngModel)="venue.name">
+  <input placeholder="Venue City" name="venueCity" (ngModel)="venue.city">
+  <select size="1" name="venueState" (ngModel)="venue.state">
     <option value="AK">AK</option>
     <option value="AL">AL</option>
     <option value="AR">AR</option>
